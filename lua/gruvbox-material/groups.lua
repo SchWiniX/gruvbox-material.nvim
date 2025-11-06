@@ -422,6 +422,8 @@ function groups.get(contrast)
     ["@constant.builtin"] = { link = "Orange" },
     ["@constant.macro"] = { link = "Aqua" },
 
+    ["@enumMember"] = { link = "Orange" },
+
     ["@module"] = { link = "Gray" },
     ["@module.builtin"] = { link = "@module" },
 
@@ -449,7 +451,6 @@ function groups.get(contrast)
     ["@type"] = { link = "Yellow" },
     ["@type.builtin"] = { link = "@type" },
     ["@type.definition"] = { link = "@type" },
-    ["@type.enumMember"] = { link = "Orange" },
 
     ["@attribute"] = { link = "Purple" },
     ["@attribute.builtin"] = { link = "@attribute" },
