@@ -412,34 +412,34 @@ function groups.get(contrast)
     -- https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights)
 
     -- identifiers
-    ["@variable"] = { link = "Blue" },
+    ["@variable"] = { link = "Gray" },
     ["@variable.builtin"] = { link = "@variable" },
-    ["@variable.parameter"] = { link = "@variable" },
-    ["@variable.parameter.builtin"] = { link = "@variable.builtin" },
+    ["@variable.parameter"] = { link = "Blue" },
+    ["@variable.parameter.builtin"] = { link = "Blue" },
     ["@variable.member"] = { link = "@variable" },
 
-    ["@constant"] = { link = "Aqua" },
-    ["@constant.builtin"] = { link = "Yellow" },
-    ["@constant.macro"] = { link = "Blue" },
+    ["@constant"] = { link = "Purple" },
+    ["@constant.builtin"] = { link = "Orange" },
+    ["@constant.macro"] = { link = "Aqua" },
 
-    ["@module"] = { link = "Blue" },
+    ["@module"] = { link = "Gray" },
     ["@module.builtin"] = { link = "@module" },
 
     ["@label"] = { link = "Orange" },
 
     -- literals
-    ["@string"] = { link = "Aqua" },
+    ["@string"] = { link = "Green" },
     ["@string.documentation"] = { link = "Comment" },
     ["@string.regexp"] = { link = "Green" },
-    ["@string.escape"] = { link = "Yellow" },
-    ["@string.special"] = { link = "@string" },
-    ["@string.special.symbol"] = { link = "@string" },
-    ["@string.special.url"] = { link = "Yellow" },
-    ["@string.special.path"] = { link = "@string" },
+    ["@string.escape"] = { link = "Aqua" },
+    ["@string.special"] = { link = "Purple" },
+    ["@string.special.symbol"] = { link = "@string.special" },
+    ["@string.special.url"] = { link = "@string.special" },
+    ["@string.special.path"] = { link = "@string.special" },
 
-    ["@character"] = { link = "Aqua" },
-    ["@character.special"] = { link = "Aqua" },
-    ["@character.printf"] = { link = "Green" },
+    ["@character"] = { link = "Purple" },
+    ["@character.special"] = { link = "@character" },
+    ["@character.printf"] = { link = "@character" },
 
     ["@boolean"] = { link = "Boolean" },
     ["@number"] = { link = "Purple" },
@@ -449,10 +449,11 @@ function groups.get(contrast)
     ["@type"] = { link = "Yellow" },
     ["@type.builtin"] = { link = "@type" },
     ["@type.definition"] = { link = "@type" },
+    ["@type.enumMember"] = { link = "Orange" },
 
     ["@attribute"] = { link = "Purple" },
     ["@attribute.builtin"] = { link = "@attribute" },
-    ["@property"] = { link = "Green" },
+    ["@property"] = { link = "Blue" },
 
     -- functions
     ["@function"] = { link = "Green" },
@@ -471,7 +472,7 @@ function groups.get(contrast)
     ["@keyword.coroutine"] = { link = "@keyword" },
     ["@keyword.function"] = { link = "@keyword" },
     ["@keyword.operator"] = { link = "@keyword" },
-    ["@keyword.import"] = { link = "@keyword" },
+    ["@keyword.import"] = { link = "Aqua" },
     ["@keyword.type"] = { link = "@keyword" },
     ["@keyword.modifier"] = { link = "@keyword" },
     ["@keyword.repeat"] = { link = "@keyword" },
@@ -486,9 +487,9 @@ function groups.get(contrast)
     ["@keyword.directive.define"] = { link = "@keyword.directive" },
 
     -- punctuation
-    ["@punctuation.delimiter"] = { link = "Fg" },
-    ["@punctuation.bracket"] = { link = "Fg" },
-    ["@punctuation.special"] = { link = "Fg" },
+    ["@punctuation.delimiter"] = { link = "Orange" },
+    ["@punctuation.bracket"] = { link = "Orange" },
+    ["@punctuation.special"] = { link = "Orange" },
 
     -- comments
     ["@comment"] = { link = "Comment" },
