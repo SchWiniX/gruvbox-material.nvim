@@ -465,7 +465,7 @@ function groups.get(contrast)
     ["@function.method"] = { link = "Green" },
     ["@function.method.call"] = { link = "@method" },
 
-    ["@constructor"] = { link = "Green" },
+    ["@constructor"] = { link = "Orange" },
     ["@operator"] = { link = "Orange" },
 
     -- keywords
